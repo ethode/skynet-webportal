@@ -7,5 +7,5 @@ if [[ -z $domain ]]; then
   exit 1
 fi
 
-sudo certbot --nginx -d "$domain" -d www."$domain"
+sudo certbot --nginx -d "$domain" -d "$domain"
 sudo certbot renew --dry-run
