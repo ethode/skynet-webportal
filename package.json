@@ -1,50 +1,82 @@
 {
   "name": "skynet-webportal",
+  "description": "Sia Skynet",
   "version": "1.0.0",
-  "homepage": "https://siasky.net",
+  "author": "Nebulous",
   "dependencies": {
-    "@testing-library/dom": "^6.12.2",
-    "@testing-library/jest-dom": "^5.1.1",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^10.0.0",
+    "axios": "^0.19.2",
     "classnames": "^2.2.6",
+    "gatsby": "^2.20.2",
+    "gatsby-image": "^2.3.0",
+    "gatsby-plugin-manifest": "^2.2.48",
+    "gatsby-plugin-matomo": "^0.8.2",
+    "gatsby-plugin-react-helmet": "^3.2.0",
+    "gatsby-plugin-remove-serviceworker": "^1.0.0",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sass": "^2.2.0",
+    "gatsby-plugin-sharp": "^2.4.13",
+    "gatsby-source-filesystem": "^2.2.1",
+    "gatsby-transformer-sharp": "^2.4.1",
     "jsonp": "^0.2.1",
     "node-sass": "^4.13.1",
+    "path-browserify": "^1.0.1",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
+    "react": "^16.13.1",
     "react-countup": "^4.3.3",
-    "react-dom": "^16.12.0",
+    "react-dom": "^16.13.0",
     "react-dropzone": "^10.2.1",
+    "react-helmet": "^5.2.1",
     "react-mailchimp-form": "^1.0.2",
     "react-mailchimp-subscribe": "^2.1.0",
     "react-reveal": "^1.2.2",
-    "react-scripts": "^3.4.0",
     "react-syntax-highlighter": "^12.2.1",
-    "react-visibility-sensor": "^5.1.1",
-    "shortid": "^2.2.15"
+    "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "cypress": "^4.2.0",
+    "cypress-file-upload": "^3.5.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "prettier": "^2.0.1"
   },
+  "keywords": [
+    "sia",
+    "skynet",
+    "nebulous",
+    "blockchain",
+    "decentralized",
+    "cloud storage"
+  ],
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+    "*.{md,html,css,scss}": [
+      "prettier --write"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NebulousLabs/skynet-webportal"
+  },
+  "bugs": {
+    "url": "https://github.com/NebulousLabs/skynet-webportal/issues"
   }
 }

@@ -1,0 +1,45 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi private-next-pages/_app.tsx": 0,
+      "multi private-next-pages/_document.tsx": 1,
+      "multi private-next-pages/index.tsx": 2,
+      "multi private-next-pages/stats.tsx": 3,
+      "multi next/dist/pages/_error": 4
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/RSUVEBLq3HLIx25MT3Ibg/pages/_app.js": 0,
+      "static/RSUVEBLq3HLIx25MT3Ibg/pages/_document.js": 1,
+      "static/RSUVEBLq3HLIx25MT3Ibg/pages/_error.js": 2,
+      "static/RSUVEBLq3HLIx25MT3Ibg/pages/index.js": 3,
+      "static/RSUVEBLq3HLIx25MT3Ibg/pages/stats.js": 4,
+      "static/cT0v5ZK71WjHqGgRRNQp-/pages/_app.js": 5,
+      "static/cT0v5ZK71WjHqGgRRNQp-/pages/_document.js": 6,
+      "static/cT0v5ZK71WjHqGgRRNQp-/pages/_error.js": 7,
+      "static/cT0v5ZK71WjHqGgRRNQp-/pages/index.js": 8,
+      "static/cT0v5ZK71WjHqGgRRNQp-/pages/stats.js": 9,
+      "static/MM7xQayxvnIkDAw6HyfhD/pages/_app.js": 0,
+      "static/MM7xQayxvnIkDAw6HyfhD/pages/_document.js": 1,
+      "static/MM7xQayxvnIkDAw6HyfhD/pages/_error.js": 2,
+      "static/MM7xQayxvnIkDAw6HyfhD/pages/index.js": 3,
+      "static/MM7xQayxvnIkDAw6HyfhD/pages/stats.js": 4
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}

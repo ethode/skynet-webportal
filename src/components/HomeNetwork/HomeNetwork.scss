@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .home-network {
   padding: 80px 0;
@@ -61,6 +61,21 @@
     @media (min-width: $largebp) {
       height: 56px;
       width: 2px;
+    }
+  }
+}
+
+.home-network-stats-provider {
+  text-align: right;
+  color: $green;
+  font-size: 13px;
+  margin-right: 12px; // keep the same as the border radius of .home-network-stats
+
+  a {
+    color: $green;
+
+    &:hover {
+      color: $black;
     }
   }
 }

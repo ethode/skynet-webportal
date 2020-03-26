@@ -112,3 +112,9 @@ if ! shopt -oq posix; then
   fi
 fi
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/go/bin:/home/user/go/bin
+
+set -o allexport
+source ~/.sia/sia.env
+set +o allexport
+
+alias siac-upload="source ~/.sia/source-upload.sh; siac --addr 'localhost:9970'"

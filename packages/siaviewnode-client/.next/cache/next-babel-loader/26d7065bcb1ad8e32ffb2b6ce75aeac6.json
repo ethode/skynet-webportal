@@ -1,0 +1,1 @@
+{"ast":null,"code":"// example theme.js\nexport var theme = {\n  fonts: {\n    body: 'system-ui, sans-serif',\n    heading: '\"Avenir Next\", sans-serif',\n    monospace: 'Menlo, monospace'\n  },\n  colors: {\n    text: '#000',\n    background: '#fff',\n    primary: '#33e'\n  }\n};","map":null,"metadata":{},"sourceType":"module"}
